@@ -9,7 +9,7 @@ while ($row = mysql_fetch_array($result))
 	{
 		$body =  $body.'<tr>'.'<td>'.$row['button_name'].'</td>'.'<td>'.$row['title'].'</td>'.'<td><a href="form.php?id='.$row['ID'].'">Редактировать</a></td>'.'</tr>';
 	};
-$body='<table border="1">'.'<tr><th>Надпись на кнопке</th><th>Заголовок статьи</th></tr>' .$body.'</table>';
+$body='<table >'.'<tr><th>Надпись на кнопке</th><th>Заголовок статьи</th></tr>' .$body.'</table>';
 
 
 

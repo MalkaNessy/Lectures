@@ -11,11 +11,18 @@ body {
 table {
 	margin: 8% auto;
 	font-size: 14px;
-	
+	background-color: #e5e1b2 ;
+	border:16px groove #e5e1b2 ;
+	border-radius: 5px;
+	/* margin-top: 4%; */
+	padding: 10px;
 }
-
+th {
+	padding-bottom: 15px;
+}
 td{
 padding: 5px;
+border:1px solid #e5e1b2 ;
 }
 
 table a {
