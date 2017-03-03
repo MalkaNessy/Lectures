@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . "/../connection.php";
-//echo '<link href="style.css" rel="stylesheet">';
+//echo '<link href="style-admin.css" rel="stylesheet">';
 function isint($str)
 {
   return preg_match("/^[0-9]+$/",$str);
@@ -23,14 +23,14 @@ if (!$row)
 //echo $row["title"];
 
 
-$includes = '<link href="style.css" rel="stylesheet">'.
+$includes = '<link href="style-admin.css" rel="stylesheet">'.
 '<link rel="stylesheet" href="CLEditor1_4_5/jquery.cleditor.css" />'.
 '<script src="jquery-3.1.1.js"></script>'.
 '<script src="CLEditor1_4_5/jquery.cleditor.min.js"></script>'.
 '<script src="form.js"></script>';
 
 
-$body = '<form action="savedata.php" method="post"><span class="formname">Заголовок статьи: </span><input name="title" type="text" value="'   .$row["title"]. '"> <br>'.
+$body = '<form action="savedata.php" method="post"><span class="formname">Заголовок статьи: </span><input name="title" type="text" value="'   .$row["title"]. '" > <br>'.
 '<span class="formname">Надпись на кнопке: </span><input name="button_name" type="text" value="'   .$row["button_name"]. '"> <br>'.
 '<span class="formname">Всплывающая подпись при наведении мышки на кнопку: </span><input name="short" type="text" value="'   .$row["short"]. '"> <br>'.
 '<span class="formname">Всплывающая подпись при нажатии на "еще": </span><input name="more" type="text" value="'   .$row["more"]. '"> <br>'.
