@@ -1,6 +1,6 @@
 <?php
 echo 'test';
- require_once("connection.php");
+require_once("connection.php");
 $link = dbconnect();
 
 $page = "intro";
@@ -45,7 +45,7 @@ $menu='<ul id="nav">'.$menu.'</ul>';
 
 	
 
-$content = $current_row['content'];
+$content =$current_row['title']. $current_row['content'];
 
 $includes = '<link href="css/main.css" rel="stylesheet">'.
 '<script src="jquery-3.1.1.js"></script>'.
