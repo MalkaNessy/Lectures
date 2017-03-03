@@ -1,0 +1,13 @@
+body {
+	background-color: yellow;
+}
+
+table {
+	margin: 8% auto;
+	
+}
+
+td{
+border: 1px solid red;
+padding: 3px;
+}

@@ -1,0 +1,189 @@
+/*******************
+8 Lectures
+*******************/
+
+
+/*******************
+GENERAL
+*******************/
+.ground {
+background-color: red;
+}
+
+
+body {
+	max-width: 920px;
+	background-color: #F9EDBE;
+	margin: auto;
+/* font-family: "Verdana", Arial, Sans-serif; */
+/* font-size: 0.875em; */
+}
+
+h3 {
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+	padding:0;
+	margin:0;
+}
+/*******************
+HEADER
+*******************/
+header {
+	background-color: #E8B181;
+	font-weight: bold;
+	padding-bottom: 10px;
+	position: relative;
+	opacity: .99;
+}
+
+#site-description{
+	float: left;
+	height: 50px;
+	font-size: 26px;
+	color: Chocolate;
+	margin-bottom: 10px;
+}
+
+#site-description p {
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+
+/*******************
+TOPNAVIGATION
+*******************/
+
+
+
+#nav {
+	text-align: center;
+	clear: both;
+	margin:0 auto;
+	padding:0 ;
+	width: 90%;
+	padding-bottom: 24px;
+}
+.button {
+	background-color: #F9EDBE;
+	
+}
+
+li.button {
+	
+display: inline-block;
+font-size: 14px;
+margin: auto;	
+}
+
+.button a{
+	background-color: #F9EDBE;
+	color: chocolate;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid brown;
+}
+
+
+#nav span {
+	display: none;
+}
+
+
+.selected, a.selected {
+	/* background-color: #65B347; */
+	background-color: Chocolate;
+	color: #F9EDBE;
+}
+
+
+
+
+/*******************
+SUBNAV
+*******************/
+
+
+#subnav {
+	padding: 5px;
+	padding-left: 10px;
+	margin-left: 8.5%;
+	margin-top: -19px;
+	
+	border: 1px solid brown;
+	/* background-color: #E8B181; */
+	width: 81%;
+		border-radius: 5px;	
+		min-height: 18px;
+		position: absolute;
+		z-index: 2;
+}
+
+.spoiler {
+	display: none;
+}
+
+.more {
+	color: brown; 
+}
+/*******************
+LAYOT
+*******************/
+
+#wrapper {
+	display: flex;
+/* 	position: relative; */
+	
+	
+}
+
+#content {
+	border-left: 7px solid #E8B181;
+	border-right: 7px solid #E8B181;
+	width: 100%;
+	padding:0 15px;
+	background-color: #fff;
+	line-height: 1.5;
+	font-family: "Verdana", Arial, Sans-serif;
+font-size: 0.875em;
+padding-bottom: 50px;
+
+}
+
+.tooltip {
+    position: relative;
+    display: inline;
+	 color: green;
+    font-weight: bold;
+    
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #DCDCDC;
+	border: 1px dotted chocolate;
+    color: chocolate;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-weight: normal;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -100px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
