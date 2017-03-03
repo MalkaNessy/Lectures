@@ -3,7 +3,7 @@
 body {
 	background-color: #eee8aa;
 	width: 85%;
-	margin: auto;
+	margin: 15px auto;
 }
 
 /*List page*/
@@ -42,7 +42,7 @@ form {
 	background-color: #e5e1b2 ;
 	border:16px groove #e5e1b2 ;
 	border-radius: 5px;
-	margin-top: 8%;
+	/* margin-top: 4%; */
 	padding: 10px;
 }
 

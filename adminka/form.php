@@ -30,11 +30,13 @@ $includes = '<link href="style-admin.css" rel="stylesheet">'.
 '<script src="form.js"></script>';
 
 
-$body = '<form action="savedata.php" method="post"><span class="formname">Заголовок статьи: </span><input name="title" type="text" value="'   .$row["title"]. '" > <br>'.
-'<span class="formname">Надпись на кнопке: </span><input name="button_name" type="text" value="'   .$row["button_name"]. '"> <br>'.
-'<span class="formname">Всплывающая подпись при наведении мышки на кнопку: </span><input name="short" type="text" value="'   .$row["short"]. '"> <br>'.
-'<span class="formname">Всплывающая подпись при нажатии на "еще": </span><input name="more" type="text" value="'   .$row["more"]. '"> <br>'.
-'<span class="formname">Текст статьи: </span><br><textarea name="content" id="data_content" rows="20" cols="100"> '   .$row["content"]. '</textarea> <br>'.
+$body = '<form action="savedata.php" method="post"><span class="formname">Надпись на кнопке: </span><input name="button_name" type="text" value="'   .$row["button_name"]. '"> <br>'.
+
+
+'<span class="formname">Всплывающая подпись при наведении мышки на кнопку: </span><textarea name="short" type="text" rows="2" cols="80"   value="'   .$row["short"]. '"></textarea> <br>'.
+'<span class="formname">Всплывающая подпись при нажатии на "еще": </span><textarea name="more" type="text" rows="2" cols="80" value="'   .$row["more"]. '"> </textarea><br>'.
+'<span class="formname">Заголовок статьи: <br></span><textarea name="title" type="text" cols="80" value="'   .$row["title"]. '" > </textarea><br>'.
+'<span class="formname">Текст статьи: </span><br><textarea name="content" id="data_content" rows="25" cols="100"> '   .$row["content"]. '</textarea> <br>'.
 '<input name="ID" type="hidden" value="'   .$id. '"> <br>'.
 '<input type="submit" value="Сохранить все изменения"> </form>';
 

@@ -1,5 +1,6 @@
 <?php
-require_once("connection.php");
+echo 'test';
+ require_once("connection.php");
 $link = dbconnect();
 
 $page = "intro";
@@ -80,5 +81,5 @@ $includes.'</head><body>'.$body.'</body></html>';
 
 
 echo $html;
-mysql_close($link);
+mysql_close($link); 
 ?>
