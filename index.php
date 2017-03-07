@@ -3,6 +3,7 @@ echo 'test';
 require_once("connection.php");
 $link = dbconnect();
 
+
 $page = "intro";
 function ispagename($str)
 {
