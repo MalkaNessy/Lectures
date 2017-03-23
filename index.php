@@ -1,5 +1,4 @@
 <?php
-echo 'test';
 require_once("connection.php");
 $link = dbconnect();
 

@@ -1,13 +1,12 @@
 <?php
 require_once __DIR__ . "/../connection.php";
 $link = dbconnect();
-
-
+//title_url = "'. 
+//mysql_real_escape_string($_POST["title_url"])  .'"'.  
+//' ,
 //var_dump($_POST);
 $sql = 'UPDATE lectures'.
-' SET title_url = "'. 
-mysql_real_escape_string($_POST["title_url"])  .'"'.  
-' , title = "'. 
+' SET title = "'. 
 mysql_real_escape_string($_POST["title"])  .'"'.
 ' , content = "'. 
 mysql_real_escape_string($_POST["content"])  .'"'. 
