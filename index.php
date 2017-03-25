@@ -45,7 +45,8 @@ $menu='<ul id="nav">'.$menu.'</ul>';
 
 	
 
-$content =$current_row['title']. $current_row['content'];
+$content ='<h6>'.$current_row['title'].'</h6>'. $current_row['content'].
+'<footer style="font-size: 13.3333px;"><p>© Mark Naidorf</p></footer>';
 
 $includes = '<link href="css/main.css" rel="stylesheet">'.
 '<script src="jquery-3.1.1.js"></script>'.
@@ -68,6 +69,7 @@ $body = '<header>
   
   $content.
 '</div>
+
    </div>
 ';
 

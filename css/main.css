@@ -19,8 +19,12 @@ body {
 /* font-size: 0.875em; */
 }
 
-h3 {
+#content h6 {
 	text-align: center;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	color: #AA3029;
+	    font-size: 1.5em;
 }
 
 a{
@@ -155,6 +159,12 @@ LAYOT
 font-size: 0.875em;
 padding-bottom: 50px;
 
+}
+
+footer {
+		text-align: center;
+		margin: 15px;
+		color: #606060;
 }
 
 .tooltip {
