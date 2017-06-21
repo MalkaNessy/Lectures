@@ -1,7 +1,7 @@
 <?php
-echo '<link href="style-admin.css" rel="stylesheet">';
-require_once __DIR__ . "/../connection.php";
-$link = dbconnect();
+echo '<link href="style-admin.css" rel="stylesheet">'; //display included css-file
+require_once __DIR__ . "/../connection.php"; //will check if the file "connection.php" has already been included
+$link = dbconnect(); // connect to Data Base
 
 $body = '';
 $result = mysql_query("SELECT * FROM lectures");

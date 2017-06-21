@@ -3,9 +3,10 @@ $(document).ready(function() {
 	
 	
 $("#nav .button a").each( function(){console.log("aaa");    
+//takes id-attribute from this button
 var id=($(this).attr("id"));
-//function assign_callback (id){}
-//assign_callback(id); 
+
+//when element with this id hovered... 
 $("#"+id).hover(function(){
 		$("#nav .button a").removeClass("selected");
 		$(this).addClass("selected");
